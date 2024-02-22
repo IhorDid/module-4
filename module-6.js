@@ -54,14 +54,27 @@ console.log(objB.sdfsdf); // получим undefined не потому что �
 //     price: 35000
 // }
 
-class Car {
-  constructor(value = { brand, model, price }) {
-    // функции вызывается в контексте пустого обекта myCar
-    this.brand = value.brand;
-    this.model = value.model;
-    this.price = value.price;
-  }
-}
+// class Car {
+//   constructor(value = ({ brand, model, price } = {})) {
+//     // функции вызывается в контексте пустого обекта myCar
+//     this.brand = value.brand;
+//     this.model = value.model;
+//     this.price = value.price;
+
+// пример метода функции, который записан в конструкторе(как раньше),
+// будут везде копии этого метода на всех екземплярах
+// this.changePrice = function (newPrice) {
+//   this.price = newPrice;
+// }
+//
+// }
+// }
+// // !Вызывает отдельно так сказал Репета, хотя это не по конспекту)
+// Car.prototype.sayHi = function () {
+//   console.log("this", this);
+//   console.log("Hello :)");
+// };
+// console.log(Car.prototype);
 
 // !можна зробити деструктиризацію
 // class Car {
@@ -73,10 +86,10 @@ class Car {
 //   }
 // }
 
-const myCar = new Car({
-  brand: "Audi",
-  model: "Q3",
-  price: 35000,
-});
+// const myCar = new Car({
+//   brand: "Audi",
+//   model: "Q3",
+//   price: 35000,
+// });
 
-console.log(myCar);
+// console.log(myCar);
