@@ -56,7 +56,7 @@ console.log(objB.sdfsdf); // получим undefined не потому что �
 
 // class Car {
 //   constructor(value = ({ brand, model, price } = {})) {
-//     // функции вызывается в контексте пустого обекта myCar
+// функции вызывается в контексте пустого обекта myCar
 //     this.brand = value.brand;
 //     this.model = value.model;
 //     this.price = value.price;
@@ -69,7 +69,7 @@ console.log(objB.sdfsdf); // получим undefined не потому что �
 //
 // }
 // }
-// // !Вызывает отдельно так сказал Репета, хотя это не по конспекту)
+// !Вызывает отдельно так сказал Репета, хотя это не по конспекту)
 // Car.prototype.sayHi = function () {
 //   console.log("this", this);
 //   console.log("Hello :)");
@@ -77,19 +77,20 @@ console.log(objB.sdfsdf); // получим undefined не потому что �
 // console.log(Car.prototype);
 
 // !можна зробити деструктиризацію
-// class Car {
-//   constructor({ brand, model, price }) {
-// функции вызывается в контексте пустого обекта myCar
-//     this.brand = brand;
-//     this.model = model;
-//     this.price = price;
-//   }
-// }
+class Car {
+  constructor({ brand, model, price }) {
+    // функции вызывается в контексте пустого обекта myCar
+    this.brand = brand;
+    this.model = model;
+    this.price = price;
+  }
+}
 
-// const myCar = new Car({
-//   brand: "Audi",
-//   model: "Q3",
-//   price: 35000,
-// });
+const myCar = new Car({
+  brand: "Audi",
+  model: "Q3",
+  price: 35000,
+});
 
-// console.log(myCar);
+console.log(myCar);
+console.log("myCar:", myCar);
