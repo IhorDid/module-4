@@ -14,11 +14,11 @@
 // * а затем создать новый массив, содержащий длины каждого слова с использованием map().
 // * Пример предложения: const sentence = "JavaScript is a powerful programming language";
 
-const sentences = "JavaScript is a powerful programming language";
-const newA = sentences.split(" ");
-const newS = newA.map((sentences) => sentences.length);
+// const sentences = "JavaScript is a powerful programming language";
+// const newA = sentences.split(" ");
+// const newS = newA.map((sentences) => sentences.length);
 
-console.log(newS);
+// console.log(newS);
 
 // *Задача: Преобразование строк с числами в массив чисел.
 // *Условие: Взять массив строк с числами, преобразовать каждую строку в число с помощью map().
@@ -46,17 +46,17 @@ console.log(newS);
 
 // console.log(originalString.split("").reverse().join(" "));
 
-const keys = ["a", "b", "c"];
-const values = [10, 20, 30];
+// const keys = ["a", "b", "c"];
+// const values = [10, 20, 30];
 
-const newArr = {};
+// const newArr = {};
 
-keys.forEach((key, i) => {
-  newArr[key] = values[i];
-});
+// keys.forEach((key, i) => {
+//   newArr[key] = values[i];
+// });
 
-console.log(newArr);
+// console.log(newArr);
 
 // return arrayToSearch.findIndex((x) => x.every((y, i) => y === query[i]));
 
-arrayToSearch.every((y, i) => y === query[i]).findIndex();
+// arrayToSearch.every((y, i) => y === query[i]).findIndex();
