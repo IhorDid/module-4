@@ -60,3 +60,43 @@
 // return arrayToSearch.findIndex((x) => x.every((y, i) => y === query[i]));
 
 // arrayToSearch.every((y, i) => y === query[i]).findIndex();
+
+// *Задача:*Подсчет количества гласных в строках массива.
+//         *Условие: Подсчитать общее количество гласных(a, e, i, o, u) во всех строках массива.
+//         *Пример массива строк: const wordsArray = ['apple', 'banana', 'orange', 'grape'];
+
+//         *В этой задаче используется два уровня reduce(): внешний для обработки каждого слова в массиве,
+//         *и внутренний для подсчета гласных в каждом слове.
+
+// const letterInWord = (word) => {
+//
+// };
+
+// const letterWord = wordsArray
+//   .join("")
+//   .split("")
+//   .reduce((acc, letter) => {
+//     if (letters.includes(letter)) {
+//       return acc + 1;
+//     } else {
+//       return acc;
+//     }
+//   }, 0);
+
+// console.log(letterWord);
+const wordsArray = ["apple", "banana", "orange", "grape"];
+const letters = ["a", "e", "i", "o", "u"];
+const letterWord = (wordsArray) => {
+  return wordsArray
+    .join("")
+    .split("")
+    .reduce((acc, letter) => {
+      if (letters.includes(letter)) {
+        return acc + 1;
+      } else {
+        return acc;
+      }
+    }, 0);
+};
+
+console.log(letterWord(wordsArray));

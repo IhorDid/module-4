@@ -111,6 +111,16 @@ const myCar = new Car({
   model: "Q3",
   price: 35000,
 });
+
 console.log(Car.prototype);
 console.dir(Car);
 console.log("myCar:", myCar);
+
+// проверяет принадлежит экземпляр к определенному класссу
+console.log(myCar instanceof Car);
+
+// принадлежночть свойсва или метода к текущему обэкта
+console.log(myCar.hasOwnProperty("brand"));
+
+// вызов статических методов, только с пмощью классов
+console.log(Car.description);
