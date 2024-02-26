@@ -84,33 +84,33 @@
 //   }, 0);
 
 // console.log(letterWord);
-// const wordsArray = ["apple", "banana", "orange", "grape"];
-// const letters = ["a", "e", "i", "o", "u"];
-// const letterWord = (wordsArray) => {
-//   return wordsArray
-//     .join("")
-//     .split("")
-//     .reduce((acc, letter) => {
-//       if (letters.includes(letter)) {
-//         return acc + 1;
-//       } else {
-//         return acc;
-//       }
-//     }, 0);
-// };
+const wordsArray = ["apple", "banana", "orange", "grape"];
+const letters = ["a", "e", "i", "o", "u"];
+const letterWord = (wordsArray) => {
+  return wordsArray
+    .join("")
+    .split("")
+    .reduce((acc, letter) => {
+      if (letters.includes(letter)) {
+        return (acc += 1);
+      } else {
+        return acc;
+      }
+    }, 0);
+};
 
-// console.log(letterWord(wordsArray));
+console.log(letterWord(wordsArray));
 
-const cart = [
-  { lable: "apple", price: 100, quantity: 2 },
-  { lable: "mango", price: 150, quantity: 8 },
-  { lable: "banana", price: 300, quantity: 7 },
-];
-const res = cart.reduce((acc, item) => {
-  if (item.lable === "mango") {
-    acc += item.price * item.quantity;
-  }
-  return acc;
-}, 0);
+// const cart = [
+//   { lable: "apple", price: 100, quantity: 2 },
+//   { lable: "mango", price: 150, quantity: 8 },
+//   { lable: "banana", price: 300, quantity: 7 },
+// ];
+// const res = cart.reduce((acc, item) => {
+//   if (item.lable === "mango") {
+//     acc += item.price * item.quantity;
+//   }
+//   return acc;
+// }, 0);
 
-console.log(res);
+// console.log(res);

@@ -1,6 +1,6 @@
 // ! textContent -
 // *властивість яка повертає текстовий
-//    *контент усередині відкрриваючого тега і закрваючого
+//  *контент усередині відкрриваючого тега і закрваючого
 //TODO     для input буде value, буде повертатися його значення після вводу щось
 // TODO в input
 
@@ -21,12 +21,24 @@
 // * виведе значення ключа action
 
 //! classList
-// Властивість, якій зберігається обєкт із методами дл роботи з СSS-классами.
+// *Властивість, якій зберігається обєкт із методами дл роботи з СSS-классами.
+// !classList.contains(className)
+classList.add("selector");
+classList.remove("selector");
+classList.toggle("selector");
+classList.replace();
+
+//    * перевіряє наявність класу
 
 const navEl = document.querySelector(".menu");
 const menuNavEl = document.querySelector(".menu-item");
 console.log(navEl);
 console.log(menuNavEl.parentNode);
 console.log(navEl.children);
+console.log(navEl.classList.contains("menu"));
 
 navEl.classList.add("is-active");
+
+// ! createElement
+// *document.createElement('h1');
+// *Створюємо елемент в документі;
