@@ -23,22 +23,25 @@
 //! classList
 // *Властивість, якій зберігається обєкт із методами дл роботи з СSS-классами.
 // !classList.contains(className)
-classList.add("selector");
-classList.remove("selector");
-classList.toggle("selector");
-classList.replace();
+// classList.add("selector");
+// classList.remove("selector");
+// classList.toggle("selector");
+// classList.replace();
 
 //    * перевіряє наявність класу
 
-const navEl = document.querySelector(".menu");
-const menuNavEl = document.querySelector(".menu-item");
-console.log(navEl);
-console.log(menuNavEl.parentNode);
-console.log(navEl.children);
-console.log(navEl.classList.contains("menu"));
+// const navEl = document.querySelector(".menu");
+// const menuNavEl = document.querySelector(".menu-item");
+// console.log(navEl);
+// console.log(menuNavEl.parentNode);
+// console.log(navEl.children);
+// console.log(navEl.classList.contains("menu"));
 
-navEl.classList.add("is-active");
+// navEl.classList.add("is-active");
 
 // ! createElement
 // *document.createElement('h1');
 // *Створюємо елемент в документі;
+
+// !document.querySelectorAll("li:first-child, li:last-child")
+// * можна записывать несколько селекторов через кому?
