@@ -9,7 +9,7 @@
 // * - текст в них
 // * - атрибуты
 
-const linkEl = document.querySelector('a[href="https://it.com]');
+// const linkEl = document.querySelector('a[href="https://it.com]');
 //  * квадратные скобки указывают что мы ещем по АТРИБУТУ
 
 // !closest
@@ -31,4 +31,3 @@ const linkEl = document.querySelector('a[href="https://it.com]');
 //    *
 //   !el.hidden -
 //  * видимость уз
-ла;

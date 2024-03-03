@@ -23,12 +23,11 @@
 //! classList
 // *Властивість, якій зберігається обєкт із методами дл роботи з СSS-классами.
 // !classList.contains(className)
+//    * перевіряє наявність класу
 // classList.add("selector");
 // classList.remove("selector");
 // classList.toggle("selector");
 // classList.replace();
-
-//    * перевіряє наявність класу
 
 // const navEl = document.querySelector(".menu");
 // const menuNavEl = document.querySelector(".menu-item");
@@ -45,3 +44,40 @@
 
 // !document.querySelectorAll("li:first-child, li:last-child")
 // * можна записывать несколько селекторов через кому?
+
+// !append --- appenChild(el)
+// element.append(el1, el2,) порядок важливий
+//   * додає елемет el1 ПІСЛЯ ДОЧІРНІХ елементів element
+
+// !prepend
+//       * додає елемент el1 ПЕРЕД ДОЧІРНІХ елементів element
+
+// !after ! before
+//       *   ПІСЛЯ  Елемента    ПЕРЕД ЕЛементом
+
+const objectsArray = [
+  { label: "red", color: "#FF0000" },
+  { label: "green", color: "#00FF00" },
+  { label: "blue", color: "#0000FF" },
+  { label: "yellow", color: "#FFFF00" },
+  { label: "orange", color: "#FFA500" },
+  { label: "purple", color: "#800080" },
+];
+
+const option = objectsArray[0];
+
+const buttonEl = document.createElement("button");
+buttonEl.type = "button";
+buttonEl.textContent = option.label;
+buttonEl.style.backgroundColor = option.color;
+console.log(buttonEl);
+
+const makeColor = (options) => {
+  return options.map((option) => {
+    const buttonEl = document.createElement("button");
+    buttonEl.type = "button";
+    buttonEl.textContent = option.label;
+    buttonEl.style.backgroundColor = option.color;
+    return buttonEl;
+  });
+};

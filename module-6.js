@@ -1,3 +1,9 @@
+// *this
+// * вказує на обєкт в  КОНТЕКСТІ якого ВИКЛИКАЄТЬСЯ функція
+// * 1. Коли функція викликається як обєкт методу.
+// * 2. Коли контекст переданий за допомогою call/ apply,bindыы
+// * 3. Коли фукнція викликана як конструктор.
+
 // !Prototype
 
 // Прототип создается с права налево
@@ -77,50 +83,21 @@
 // console.log(Car.prototype);
 
 // !можна зробити деструктиризацію
-class Car {
-  // cдесь будут статические свойсва и методы, которые не передаются на
-  // екземпляры
+// class Car {
+// cдесь будут статические свойсва и методы, которые не передаются на
+// екземпляры
 
-  static description = "Class description auto";
-  static logInfo(carObj) {
-    console.log(carObj);
-  }
-
-  constructor({ brand, model, price }) {
-    // функции вызывается в контексте пустого обекта myCar
-    this.brand = brand;
-    this.model = model;
-    this.price = price;
-  }
-
-  // методы записываются в прототип Car
-
-  changePrice(newPrice) {
-    this.price = newPrice;
-  }
-
-  updateModel(newModel) {
-    this.model = newModel;
-  }
-}
+// методы записываются в прототип Car
 
 // Это екзепляр
 
-const myCar = new Car({
-  brand: "Audi",
-  model: "Q3",
-  price: 35000,
-});
-
-console.log(Car.prototype);
-console.dir(Car);
-console.log("myCar:", myCar);
-
 // проверяет принадлежит экземпляр к определенному класссу
-console.log(myCar instanceof Car);
+// console.log(myCar instanceof Car);
 
 // принадлежночть свойсва или метода к текущему обэкта
-console.log(myCar.hasOwnProperty("brand"));
+// console.log(myCar.hasOwnProperty("brand"));
 
 // вызов статических методов, только с пмощью классов
-console.log(Car.description);
+// console.log(Car.description);
+
+// ("use strict");
