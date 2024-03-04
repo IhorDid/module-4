@@ -72,12 +72,14 @@ buttonEl.textContent = option.label;
 buttonEl.style.backgroundColor = option.color;
 console.log(buttonEl);
 
-const makeColor = (options) => {
-  return options.map((option) => {
-    const buttonEl = document.createElement("button");
-    buttonEl.type = "button";
-    buttonEl.textContent = option.label;
-    buttonEl.style.backgroundColor = option.color;
-    return buttonEl;
-  });
-};
+// const makeColor = (options) => {
+//   return options.map((option) => {
+//     const buttonEl = document.createElement("button");
+//     buttonEl.type = "button";
+//     buttonEl.textContent = option.label;
+//     buttonEl.style.backgroundColor = option.color;
+//     return buttonEl;
+//   });
+// };
+
+// hw1
