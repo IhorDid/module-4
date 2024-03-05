@@ -41,6 +41,8 @@
 // ! createElement
 // *document.createElement('h1');
 // *Створюємо елемент в документі;
+// *Метод createElement() доступний для об'єкта document, а не для DOM-елементів.
+// *Ви не можете викликати createElement() на вже створених DOM - елементах
 
 // !document.querySelectorAll("li:first-child, li:last-child")
 // * можна записывать несколько селекторов через кому?
@@ -82,4 +84,41 @@ console.log(buttonEl);
 //   });
 // };
 
-// hw1
+// ! innerHTML
+// * влсативість,яка зберігає вміст елемнта включно з тегами у вигляді РЯДКА.
+// * Повертає валідний код
+// * const articleRef = document.querySelector("article");
+// * console.log(articleRef.innerHTML);
+
+// * також можна змінити код задавши рядок з html тегами
+// * articleRef.innerHTML = 'New and <span class="accent">improved</span> title';
+
+// * якщо задати пустий рядок то очистить вміст елемента з текстовими і теговими вузлами
+// * articleRef.innerHTML = '';
+
+// * вмкористовувати властивість тільки у разі уоли елемент ПОРОЖНІЙ або ЗАМІНИТИ вміст,
+// * так як перезаписує заново і тоді додає((
+
+// ! insertAjacentHTML
+// * вирішує проблему, але тільки ДОДАЄ рядок та має синтаксис
+// * element.insertAdjacentHTML(position, string)
+// * string - м.б. як просто рядок з тегами, так і назва змінної
+// * element.insertAdjacentHTML('beforebegin', marup)
+// * element.insertAdjacentHTML('beforeend' , '<h2>Popular technologies</h2>')
+
+// !addEventListener
+// * як правильно писати прослуховування подій див.мій.конспект)
+// TODO Репета Модуль 7.14 15мин - додає і видаляє прослуховувач подій
+
+// *const formData = new FormData (event.currentTarget)
+// * збраємо всі дані форми, де event.currentTarget - посилання на елемент, тобто весь його тег
+
+// *formData.forEach((value, name) => {
+// * console.log(value);
+// *console.log(name);
+// * })
+// * перебираємо всі ВКАЗАНІ в параметрах елементи і виводимо іх
+
+// TODO Репета Модуль 7.14 54 мин - пояснення кнопки та інпута.
+// TODO button.disable & event.currentTarget.checked
+//  1.16 год -модалка
