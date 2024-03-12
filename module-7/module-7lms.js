@@ -1,3 +1,4 @@
+// import _ from "lodash";
 // const articleRef = document.querySelector("article");
 // console.log(articleRef.innerHTML);
 
@@ -57,3 +58,12 @@ function reset() {
 function incrementKeypressCounter() {
   keypressCounter += 1;
 }
+import Lodash from "lodash";
+const users = [
+  { name: "John", age: 30 },
+  { name: "Jane", age: 25 },
+  { name: "Bob", age: 35 },
+];
+
+const sortedUsers = _.sortBy(users, "age");
+console.log(sortedUsers);
